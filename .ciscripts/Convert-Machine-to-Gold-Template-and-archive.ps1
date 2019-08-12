@@ -7,11 +7,11 @@ $vCenter_PASSWORD = 'MXORSj^0Z$lBT0t'
 $vCenter_CLUSTER = 'cluster1'
 $vCenter_DATASTORE = 'vsanDatastore'
 
-$vm_gold = 'debian-base'
+$vm_gold = 'debian10-base'
 $epoch = (New-TimeSpan -Start (Get-Date "01/01/1970") -End (Get-Date)).TotalSeconds
 $archive_tag = Get-Date -Format "yyyy-MM-dd-$epoch"
-$vm_gold_archive = $("debian-base-" + $archive_tag)
-$vm_success_built = 'debian-building'
+$vm_gold_archive = $("debian10-base-" + $archive_tag)
+$vm_success_built = 'debian10-building'
 
 
 ################################################
